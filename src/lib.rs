@@ -19,8 +19,11 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 #[derive(Debug)]
 pub struct Config {
+    // 查询的关键字
     pub query: String,
+    // 查询的文件名称
     pub filename: String,
+    // 环境变量中是否配置了忽略大小写
     pub case_insensitive: bool,
 }
 
@@ -31,12 +34,10 @@ impl Config {
         }
 
         args.next();
-
         let query = match args.next() {
             Some(arg) => arg,
             None => return Err("没有获取到要查询的关键字")
         };
-
         let filename = match args.next() {
             Some(arg) => arg,
             None => return Err("没有获取到文件名称")
