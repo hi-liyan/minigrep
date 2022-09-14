@@ -3,7 +3,7 @@ use minigrep::{self, Config};
 
 /// 跟着 Bilibili 杨旭老师的《Rust 编程语言入门教程》敲的第一个小实例
 ///
-/// # Example
+/// # Examples
 /// ###
 /// ```bash
 /// cargo run abc hello.txt
