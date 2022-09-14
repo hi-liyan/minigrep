@@ -1,0 +1,4 @@
+Java 是一门纯粹的面向对象语言。
+Rust 是一门安全、快速、可生产的语言。
+JavaScript 前端必备。
+Dart 是 Google 开源的一门面向对象语言。
